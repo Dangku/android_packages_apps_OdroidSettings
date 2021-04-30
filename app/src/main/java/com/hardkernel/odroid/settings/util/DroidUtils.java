@@ -82,6 +82,10 @@ public final class DroidUtils {
 		return getBoard().equals("odroidc4");
 	}
 
+	public static boolean isBananapiM5() {
+		return getBoard().equals("bananapi_m5");
+	}
+
 	private static String board = null;
 
 	private static String getBoard() {

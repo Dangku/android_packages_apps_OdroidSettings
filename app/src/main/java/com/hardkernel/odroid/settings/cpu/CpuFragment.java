@@ -54,7 +54,7 @@ public class CpuFragment extends LeanbackAddBackPreferenceFragment {
 	private void refreshStatus() {
         String currentClock;
         String currentGovernor;
-        if (DroidUtils.isOdroidC4()) {
+        if (DroidUtils.isOdroidC4() || DroidUtils.isBananapiM5()) {
             bigCoreClockPref.setVisible(false);
             bigCoreGovernorPref.setVisible(false);
         }

@@ -159,7 +159,7 @@ public class Frequency {
                 id = (CPU.Cluster.Big == cluster)?
                     R.array.n2_big
                     : R.array.n2_little;
-        } else if (DroidUtils.isOdroidC4())
+        } else if (DroidUtils.isOdroidC4() || DroidUtils.isBananapiM5())
             id = R.array.c4;
 
         return Arrays.asList(context.getResources().getStringArray(id));
